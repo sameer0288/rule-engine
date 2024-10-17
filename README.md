@@ -15,8 +15,6 @@ This application allows users to evaluate rules based on user data. Users can se
   - [Start the Frontend Application](#start-the-frontend-application)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -48,29 +46,29 @@ Before you begin, ensure you have the following installed:
 1. Open your terminal.
 2. Clone the repository using the following command:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/sameer0288/rule-engine.git
 
    ```
 
-   cd <project-name>
+       cd rule-engine
 
 ## Install Dependencies
 
   ### 1. Navigate to the backend folder:
 
-   cd backend
+     cd backend
 
   ## Install the necessary backend packages:
 
-   npm install
+     npm install
 
   ### 2. Navigate to the frontend folder:
 
-   cd ../frontend
+     cd ../frontend
    
   ## Install the necessary frontend packages:
 
-   npm install
+     npm install
 
  ## Environment Variables
 
@@ -109,16 +107,23 @@ The frontend will run on http://localhost:3000.
 
 # Usage
 Open your browser and navigate to http://localhost:3000.
+
 You will see a list of rules fetched from the backend.
+
 Select the rules you want to combine and evaluate.
+
 Input user data in the provided fields (age, department, salary, experience).
+
 Click "Evaluate" to check if the user data meets the criteria of the selected rule(s).
+
 Click "Combine Selected Rules" to combine your selections.
 
 
 # API Endpoints
 Fetch All Rules: GET /api/rules
+
 Combine Selected Rules: POST /api/rules/combine
+
 Evaluate a Rule: POST /api/rules/evaluate
 
 Refer to the API documentation for more details on each endpoint.
